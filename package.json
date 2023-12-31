@@ -1,6 +1,8 @@
 {
   "private": true,
   "scripts": {
+    "gen": "turbo gen",
+    "db:reset": "turbo db:reset",
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
@@ -21,8 +23,5 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ],
-  "dependencies": {
-    "@types/node": "^20.10.6"
-  }
+  ]
 }

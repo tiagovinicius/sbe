@@ -1,0 +1,1 @@
+export const teste = () => "Tiago esteve aqui";

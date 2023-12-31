@@ -1,5 +1,5 @@
 {
-  "name": "competences-web",
+  "name": "capabilities-web",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "competences-features": "*",
+    "capabilities-features": "*",
     "next": "^14.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

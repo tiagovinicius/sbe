@@ -1,0 +1,13 @@
+{
+  "name": "capabilities-domain",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "lint": "eslint src/",
+    "type-check": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "infrastructure-supabase": "*",
+    "typescript": "latest"
+  }
+}

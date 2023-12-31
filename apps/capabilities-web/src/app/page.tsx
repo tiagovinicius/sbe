@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card } from "design-system/card";
+import {Card} from "capabilities-features/card";
 
 function Gradient({
   conic,
