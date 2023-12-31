@@ -3,8 +3,8 @@
   "main": "src/index.ts",
   "types": "src/index.ts",
   "scripts": {
-    "supabase:gen-types": "supabase gen types typescript --linked --schema public > src/types/models.ts",
-    "supabase:reset": "supabase db reset --linked",
+    "supabase:gen-types": "bunx supabase gen types typescript --linked --schema public > src/types/models.ts",
+    "supabase:reset": "bunx supabase db reset --linked",
     "snaplet:gen-cli": "snaplet generate",
     "snaplet:seed": "bunx tsx seed.mts > supabase/seed.sql",
     "gen": "bun supabase:gen-types && bun snaplet:gen-cli",
