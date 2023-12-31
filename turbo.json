@@ -7,7 +7,7 @@
     },
     "db:reset": {},
     "build": {
-      "dependsOn": ["^build", "gen"],
+      "dependsOn": ["gen", "^build"],
       "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
     },
     "lint": {},

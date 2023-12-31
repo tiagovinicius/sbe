@@ -3,14 +3,19 @@
   "main": "src/index.ts",
   "types": "src/index.ts",
   "scripts": {
-    "gen": "supabase gen types typescript --linked --schema public > src/types/models.ts && cd supabase && snaplet generate",
-    "db:reset": "bun gen && bunx tsx supabase/seed.mts > supabase/seed.sql && supabase db reset --linked",
+    "supabase:gen-types": "supabase gen types typescript --linked --schema public > src/types/models.ts",
+    "supabase:reset": "supabase db reset --linked",
+    "snaplet:gen-cli": "snaplet generate",
+    "snaplet:seed": "bunx tsx seed.mts > supabase/seed.sql",
+    "gen": "run-s supabase:gen-types snaplet:gen-cli",
+    "db:reset": "run-s snaplet:seed supabase:reset",
     "lint": "eslint src/",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@snaplet/seed": "^0.77.3",
     "@types/node": "^20.10.6",
+    "npm-run-all": "^4.1.5",
     "snaplet": "^0.77.3",
     "supabase": "^1.127.4"
   },

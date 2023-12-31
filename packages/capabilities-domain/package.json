@@ -6,8 +6,10 @@
     "lint": "eslint src/",
     "type-check": "tsc --noEmit"
   },
+  "dependencies": {
+    "infrastructure-supabase": "*"
+  },
   "peerDependencies": {
-    "infrastructure-supabase": "*",
     "typescript": "latest"
   }
 }
