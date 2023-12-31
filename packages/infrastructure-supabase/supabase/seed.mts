@@ -11,4 +11,4 @@ const snaplet = new SnapletClient({
 // Clears all existing data in the database, but keep the structure
 await snaplet.$resetDatabase()
 
-await snaplet.people(x => x(3))
+await snaplet.people(x => x(5))
