@@ -6,7 +6,7 @@
     "supabase:gen-types": "bunx supabase gen types typescript --linked --schema public > src/types/models.ts",
     "supabase:reset": "bunx supabase db reset --linked",
     "snaplet:gen-cli": "bunx snaplet generate",
-    "snaplet:seed": "bunx tsx seed.mts > bunx supabase/seed.sql",
+    "snaplet:seed": "bunx tsx seed.mts > supabase/seed.sql",
     "gen": "bun supabase:gen-types && bun snaplet:gen-cli",
     "db:reset": "bun snaplet:seed && bun supabase:reset",
     "lint": "eslint src/",

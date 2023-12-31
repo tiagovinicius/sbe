@@ -16,7 +16,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "capabilities-domain": "*"
+    "capabilities-domain": "workspace:*"
   },
   "peerDependencies": {
     "react": "^18.2.0"

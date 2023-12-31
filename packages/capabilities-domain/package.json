@@ -7,7 +7,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "infrastructure-supabase": "*"
+    "infrastructure-supabase": "workspace:*"
   },
   "peerDependencies": {
     "typescript": "latest"
