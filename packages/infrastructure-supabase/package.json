@@ -18,5 +18,8 @@
   },
   "peerDependencies": {
     "typescript": "latest"
-  }
+  },
+  "trustedDependencies": [
+    "supabase"
+  ]
 }
