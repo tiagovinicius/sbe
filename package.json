@@ -10,6 +10,9 @@
     "clean": "turbo clean",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
+  "dependencies": {
+    "supabase": "^1.127.4"
+  },
   "devDependencies": {
     "eslint": "^8.54.0",
     "prettier": "^3.1.0",
