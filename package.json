@@ -10,24 +10,15 @@
     "clean": "turbo clean",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
-  "dependencies": {
-    "supabase": "^1.127.4"
-  },
+  "preinstall": "npx only-allow pnpm",
   "devDependencies": {
     "eslint": "^8.54.0",
     "prettier": "^3.1.0",
     "prettier-plugin-tailwindcss": "^0.5.7",
-    "turbo": "latest"
+    "turbo": "1.10.4"
   },
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "bun@1.0.14",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
-  "trustedDependencies": [
-    "supabase"
-  ]
+  "packageManager": "pnpm@8.13.1"
 }
