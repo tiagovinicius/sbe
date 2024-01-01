@@ -21,7 +21,7 @@ importers:
         specifier: 1.10.4
         version: 1.10.4
 
-  apps/capabilities-web:
+  apps/talent-search-web:
     dependencies:
       capabilities-features:
         specifier: workspace:*
